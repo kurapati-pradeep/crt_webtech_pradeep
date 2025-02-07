@@ -1,0 +1,1 @@
+document.write("this is my first java script")

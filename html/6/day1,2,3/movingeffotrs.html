@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            margin: 50px;
+        }
+        container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        img{
+    width: 200px;
+    border: 5px;
+    box-shadow: 0 4px 10px rgba(red, green, blue, alpha);
+    transition: transform 0.5s easy-in-out;
+        .zoom:hover{
+            transform: scale(1.2);
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>scale image efforts</h1>
+    <div class="container">
+        <div>
+            <h2>1.hover to zoom </h2>
+            <img src="image.png" alt="zoom image"class="zoom">
+        </div>
+        <div>
+            <h2>2.continuous zoom in &out </h2>
+            <img src="image.png" alt="zoom animation" class="zoom-animate">
+        </div>
+        <div>
+            <h2>3. hover to stretch horizontal </h2>
+            <img src="image.png" alt="strech image" class="strect"> 
+        </div>
+        <div>
+            <h2>4.  hover to strech vertically</h2>
+            <img src="image.png" alt="strech image" class="vertically"> 
+        </div>
+        <div>
+            <h2>5. hover to shink  </h2>
+            <img src="image.png" alt="strech image" class="shink"> 
+        </div>
+</body>
+</html>
