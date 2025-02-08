@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right,rgb(45, 65, 126),#f89b);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #emoji{
+            font-size: 10rem;
+            text-shadow: rgba(139, 97, 103, 0.733),#8e4b4b,#112475,#f567f5;
+            filter: grayscale(1);
+            transition-property: transform,filter;
+        }
+        #emoji:hover{
+            transform: scale(1.2);
+            filter: grayscale(0);
+        }
+    </style>
+</head>
+<body>
+    <div id="emoji">😁</div>
+    <script>const btn = document.querySelector("#emoji");
+        const emojis=[
+            "😁",
+            "😂",
+            "😃",
+            "😄",
+            "😅",
+            "😆",
+            "😉",
+            "😊",   
+            "😋",
+            "😌",
+            "😍",
+            "😎",
+            "😏",
+            "😐",
+            "😑",
+            "😒",
+            "😓",
+            "😔",
+            "😕",
+            "😖",
+            "😗",
+            "😘",
+            "😙",
+            "😚",
+            "😛",
+            "😜",
+            "😝",
+            "😞",
+            "😟",
+            "😠",
+            "😡",
+            "😢",
+            "😣",
+            "😤",
+            "😥",
+            "😦",
+            "😧",
+            "😨",
+            "😩",
+            "😪",
+            "😫",
+            "😬",
+            "😭",
+            "😮",
+            "😯",
+            "😰",
+            "😱",
+            "😲",
+            "😳",
+            "😴",
+            "😵",
+            "😶",
+            "😷",
+            "😸",
+            "😹",
+            "😺",
+            "😻",
+            "😼",
+                
+        ]
+        btn.addEventListener("mouseover",()=>{
+            btn.innerHTML= emojis [Math.floor(Math.random() * emojis.length)];
+        });
+    </script>
+</body>
+</html>
